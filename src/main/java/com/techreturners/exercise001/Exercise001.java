@@ -19,21 +19,21 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        String rev_sentence= "";
+        String revSentence= "";
         for(int i = sentence.length()-1; i>=0; i--) {
-            rev_sentence = rev_sentence + sentence.charAt(i);
+            revSentence = revSentence + sentence.charAt(i);
         }
-        return rev_sentence;
+        return revSentence;
     }
 
     public int countLinuxUsers(List<User> users) {
-        int count_linux_users = 0;
+        int countLinuxUsers = 0;
         for (User user : users) {
-            if (user.getType() == "Linux") {
-                count_linux_users++;
+            if (user.getType().equals("Linux")) {
+                countLinuxUsers++;
             }
         }
 
-        return count_linux_users;
+        return countLinuxUsers;
     }
 }
